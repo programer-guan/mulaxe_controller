@@ -1,0 +1,453 @@
+=========================================================================================================
+Auto created by the td v4.5.12562
+@Copy Right: Shanghai Anlogic Infotech, 2011 - 2021.
+Thu Dec 19 17:44:20 2019
+=========================================================================================================
+
+
+Top Model:                CPLD_SOC_AHB_TOP                                                
+Device:                   ef2_4                                                           
+Timing Constraint File:   Quick_Start.sdc                                                 
+STA Level:                Detail                                                          
+Process parameter::       TT  1.10v  85C                                                  
+
+=========================================================================================================
+Timing constraint:        clock: clk100m                                                  
+Clock = clk100m, period 10ns, rising at 0ns, falling at 5ns
+
+5930 endpoints analyzed totally, and 203654 paths analyzed
+1 errors detected : 1 setup errors (TNS = -1.026), 0 hold errors (TNS = 0.000)
+Minimum period is 11.026ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point U_AHB/reg35_b23.F (273 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -1.026 ns                                                        
+ StartPoint:              U_AHB/reg0_b10|U_AHB/reg0_b2.clk (rising edge triggered by clock clk100m)
+ EndPoint:                U_AHB/reg35_b23.a[1] (rising edge triggered by clock clk100m)   
+ Clock group:             clk100m                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ U_AHB/reg0_b10|U_AHB/reg0_b2.clk                            clock                   1.473
+ launch clock edge                                           clock                   0.000
+ U_AHB/reg0_b10|U_AHB/reg0_b2.q[0]                           cell                    0.146
+ U_AHB/reg15_b5|U_AHB/reg15_b6.c[0] (U_AHB/h2h_haddr[4])     net (fanout = 8)        1.162  src/AHB.v(23)
+ U_AHB/reg15_b5|U_AHB/reg15_b6.f[0]                          cell                    0.262
+ _al_u3168|U_AHB/reg6_b19.b[1] (U_AHB/n90)                   net (fanout = 49)       1.172               
+ _al_u3168|U_AHB/reg6_b19.f[1]                               cell                    0.451
+ _al_u3168|U_AHB/reg6_b19.d[0] (_al_u3168_o)                 net (fanout = 1)        0.166               
+ _al_u3168|U_AHB/reg6_b19.f[0]                               cell                    0.274
+ _al_u2177|U_AHB/reg19_b9.a[0] (_al_u3169_o)                 net (fanout = 1)        1.355               
+ _al_u2177|U_AHB/reg19_b9.f[0]                               cell                    0.443
+ _al_u2419|U_AHB/reg20_b31.a[0] (_al_u3170_o)                net (fanout = 1)        0.720               
+ _al_u2419|U_AHB/reg20_b31.f[0]                              cell                    0.443
+ U_AHB/reg10_b17|U_AHB/reg10_b16.a[1] (_al_u3171_o)          net (fanout = 1)        1.359               
+ U_AHB/reg10_b17|U_AHB/reg10_b16.f[1]                        cell                    0.443
+ U_AHB/reg35_b23.a[1] (_al_u3172_o)                          net (fanout = 2)        2.432  src/AHB.v(18)
+ Arrival time                                                                       12.301 (7 lvl)
+                                                                                          (32% logic, 68% net)
+
+ U_AHB/reg35_b23.clk                                                                 1.272
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.119
+ Required time                                                                      11.275
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -1.026 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -1.026 ns                                                        
+ StartPoint:              U_AHB/reg0_b10|U_AHB/reg0_b2.clk (rising edge triggered by clock clk100m)
+ EndPoint:                U_AHB/reg35_b23.a[0] (rising edge triggered by clock clk100m)   
+ Clock group:             clk100m                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ U_AHB/reg0_b10|U_AHB/reg0_b2.clk                            clock                   1.473
+ launch clock edge                                           clock                   0.000
+ U_AHB/reg0_b10|U_AHB/reg0_b2.q[0]                           cell                    0.146
+ U_AHB/reg15_b5|U_AHB/reg15_b6.c[0] (U_AHB/h2h_haddr[4])     net (fanout = 8)        1.162  src/AHB.v(23)
+ U_AHB/reg15_b5|U_AHB/reg15_b6.f[0]                          cell                    0.262
+ _al_u3168|U_AHB/reg6_b19.b[1] (U_AHB/n90)                   net (fanout = 49)       1.172               
+ _al_u3168|U_AHB/reg6_b19.f[1]                               cell                    0.451
+ _al_u3168|U_AHB/reg6_b19.d[0] (_al_u3168_o)                 net (fanout = 1)        0.166               
+ _al_u3168|U_AHB/reg6_b19.f[0]                               cell                    0.274
+ _al_u2177|U_AHB/reg19_b9.a[0] (_al_u3169_o)                 net (fanout = 1)        1.355               
+ _al_u2177|U_AHB/reg19_b9.f[0]                               cell                    0.443
+ _al_u2419|U_AHB/reg20_b31.a[0] (_al_u3170_o)                net (fanout = 1)        0.720               
+ _al_u2419|U_AHB/reg20_b31.f[0]                              cell                    0.443
+ U_AHB/reg10_b17|U_AHB/reg10_b16.a[1] (_al_u3171_o)          net (fanout = 1)        1.359               
+ U_AHB/reg10_b17|U_AHB/reg10_b16.f[1]                        cell                    0.443
+ U_AHB/reg35_b23.a[0] (_al_u3172_o)                          net (fanout = 2)        2.432  src/AHB.v(18)
+ Arrival time                                                                       12.301 (7 lvl)
+                                                                                          (32% logic, 68% net)
+
+ U_AHB/reg35_b23.clk                                                                 1.272
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.119
+ Required time                                                                      11.275
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -1.026 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -0.993 ns                                                        
+ StartPoint:              U_AHB/reg0_b12|U_AHB/reg0_b0.clk (rising edge triggered by clock clk100m)
+ EndPoint:                U_AHB/reg35_b23.a[1] (rising edge triggered by clock clk100m)   
+ Clock group:             clk100m                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ U_AHB/reg0_b12|U_AHB/reg0_b0.clk                            clock                   1.473
+ launch clock edge                                           clock                   0.000
+ U_AHB/reg0_b12|U_AHB/reg0_b0.q[0]                           cell                    0.146
+ U_AHB/reg15_b8|U_AHB/reg15_b4.d[1] (U_AHB/h2h_haddr[2])     net (fanout = 56)       0.831  src/AHB.v(23)
+ U_AHB/reg15_b8|U_AHB/reg15_b4.f[1]                          cell                    0.274
+ U_AHB/reg25_b0|U_AHB/reg25_b1.d[0] (U_AHB/n95_lutinv)       net (fanout = 4)        0.502               
+ U_AHB/reg25_b0|U_AHB/reg25_b1.f[0]                          cell                    0.274
+ _al_u3168|U_AHB/reg6_b19.b[0] (U_AHB/n96)                   net (fanout = 55)       1.122               
+ _al_u3168|U_AHB/reg6_b19.f[0]                               cell                    0.451
+ _al_u2177|U_AHB/reg19_b9.a[0] (_al_u3169_o)                 net (fanout = 1)        1.355               
+ _al_u2177|U_AHB/reg19_b9.f[0]                               cell                    0.443
+ _al_u2419|U_AHB/reg20_b31.a[0] (_al_u3170_o)                net (fanout = 1)        0.720               
+ _al_u2419|U_AHB/reg20_b31.f[0]                              cell                    0.443
+ U_AHB/reg10_b17|U_AHB/reg10_b16.a[1] (_al_u3171_o)          net (fanout = 1)        1.359               
+ U_AHB/reg10_b17|U_AHB/reg10_b16.f[1]                        cell                    0.443
+ U_AHB/reg35_b23.a[1] (_al_u3172_o)                          net (fanout = 2)        2.432  src/AHB.v(18)
+ Arrival time                                                                       12.268 (7 lvl)
+                                                                                          (33% logic, 67% net)
+
+ U_AHB/reg35_b23.clk                                                                 1.272
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.119
+ Required time                                                                      11.275
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -0.993 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point PWMA/reg2_b15|PWMA/reg3_b15.F (100 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      0.870 ns                                                        
+ StartPoint:              PWMA/reg2_b19|PWMA/reg3_b19.clk (rising edge triggered by clock clk100m)
+ EndPoint:                PWMA/reg2_b15|PWMA/reg3_b15.a[0] (rising edge triggered by clock clk100m)
+ Clock group:             clk100m                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ PWMA/reg2_b19|PWMA/reg3_b19.clk                             clock                   1.473
+ launch clock edge                                           clock                   0.000
+ PWMA/reg2_b19|PWMA/reg3_b19.q[0]                            cell                    0.146
+ _al_u2821|U_AHB/reg21_b30.d[0] (PWMA/RemaTxNum[19])         net (fanout = 4)        1.101 src/OnePWM.v(8)
+ _al_u2821|U_AHB/reg21_b30.f[0]                              cell                    0.274
+ U_AHB/reg20_b10|U_AHB/reg20_b9.a[0] (_al_u2500_o)           net (fanout = 1)        1.037               
+ U_AHB/reg20_b10|U_AHB/reg20_b9.f[0]                         cell                    0.443
+ U_AHB/reg24_b10|U_AHB/reg24_b28.a[0] (_al_u2501_o)          net (fanout = 1)        0.704               
+ U_AHB/reg24_b10|U_AHB/reg24_b28.f[0]                        cell                    0.443
+ U_AHB/reg26_b31|U_AHB/reg26_b28.a[0] (_al_u2502_o)          net (fanout = 2)        1.025               
+ U_AHB/reg26_b31|U_AHB/reg26_b28.f[0]                        cell                    0.427
+ U_AHB/reg28_b15|U_AHB/reg28_b5.b[1] (PWMA/n25_neg_lutinv)   net (fanout = 26)       1.234               
+ U_AHB/reg28_b15|U_AHB/reg28_b5.f[1]                         cell                    0.348
+ PWMA/reg2_b15|PWMA/reg3_b15.a[0] (_al_u2539_o)              net (fanout = 1)        1.750 src/OnePWM.v(8)
+ Arrival time                                                                       10.405 (6 lvl)
+                                                                                          (35% logic, 65% net)
+
+ PWMA/reg2_b15|PWMA/reg3_b15.clk                                                     1.272
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.119
+ Required time                                                                      11.275
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.870 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      0.893 ns                                                        
+ StartPoint:              PWMA/reg2_b18|PWMA/reg3_b18.clk (rising edge triggered by clock clk100m)
+ EndPoint:                PWMA/reg2_b15|PWMA/reg3_b15.a[0] (rising edge triggered by clock clk100m)
+ Clock group:             clk100m                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ PWMA/reg2_b18|PWMA/reg3_b18.clk                             clock                   1.473
+ launch clock edge                                           clock                   0.000
+ PWMA/reg2_b18|PWMA/reg3_b18.q[0]                            cell                    0.146
+ _al_u2821|U_AHB/reg21_b30.a[0] (PWMA/RemaTxNum[18])         net (fanout = 4)        0.909 src/OnePWM.v(8)
+ _al_u2821|U_AHB/reg21_b30.f[0]                              cell                    0.443
+ U_AHB/reg20_b10|U_AHB/reg20_b9.a[0] (_al_u2500_o)           net (fanout = 1)        1.037               
+ U_AHB/reg20_b10|U_AHB/reg20_b9.f[0]                         cell                    0.443
+ U_AHB/reg24_b10|U_AHB/reg24_b28.a[0] (_al_u2501_o)          net (fanout = 1)        0.704               
+ U_AHB/reg24_b10|U_AHB/reg24_b28.f[0]                        cell                    0.443
+ U_AHB/reg26_b31|U_AHB/reg26_b28.a[0] (_al_u2502_o)          net (fanout = 2)        1.025               
+ U_AHB/reg26_b31|U_AHB/reg26_b28.f[0]                        cell                    0.427
+ U_AHB/reg28_b15|U_AHB/reg28_b5.b[1] (PWMA/n25_neg_lutinv)   net (fanout = 26)       1.234               
+ U_AHB/reg28_b15|U_AHB/reg28_b5.f[1]                         cell                    0.348
+ PWMA/reg2_b15|PWMA/reg3_b15.a[0] (_al_u2539_o)              net (fanout = 1)        1.750 src/OnePWM.v(8)
+ Arrival time                                                                       10.382 (6 lvl)
+                                                                                          (36% logic, 64% net)
+
+ PWMA/reg2_b15|PWMA/reg3_b15.clk                                                     1.272
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.119
+ Required time                                                                      11.275
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.893 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      1.213 ns                                                        
+ StartPoint:              PWMA/reg3_b20.clk (rising edge triggered by clock clk100m)      
+ EndPoint:                PWMA/reg2_b15|PWMA/reg3_b15.a[0] (rising edge triggered by clock clk100m)
+ Clock group:             clk100m                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ PWMA/reg3_b20.clk                                           clock                   1.473
+ launch clock edge                                           clock                   0.000
+ PWMA/reg3_b20.q[0]                                          cell                    0.146
+ _al_u2821|U_AHB/reg21_b30.b[0] (PWMA/RemaTxNum[20])         net (fanout = 5)        0.581 src/OnePWM.v(8)
+ _al_u2821|U_AHB/reg21_b30.f[0]                              cell                    0.451
+ U_AHB/reg20_b10|U_AHB/reg20_b9.a[0] (_al_u2500_o)           net (fanout = 1)        1.037               
+ U_AHB/reg20_b10|U_AHB/reg20_b9.f[0]                         cell                    0.443
+ U_AHB/reg24_b10|U_AHB/reg24_b28.a[0] (_al_u2501_o)          net (fanout = 1)        0.704               
+ U_AHB/reg24_b10|U_AHB/reg24_b28.f[0]                        cell                    0.443
+ U_AHB/reg26_b31|U_AHB/reg26_b28.a[0] (_al_u2502_o)          net (fanout = 2)        1.025               
+ U_AHB/reg26_b31|U_AHB/reg26_b28.f[0]                        cell                    0.427
+ U_AHB/reg28_b15|U_AHB/reg28_b5.b[1] (PWMA/n25_neg_lutinv)   net (fanout = 26)       1.234               
+ U_AHB/reg28_b15|U_AHB/reg28_b5.f[1]                         cell                    0.348
+ PWMA/reg2_b15|PWMA/reg3_b15.a[0] (_al_u2539_o)              net (fanout = 1)        1.750 src/OnePWM.v(8)
+ Arrival time                                                                       10.062 (6 lvl)
+                                                                                          (38% logic, 62% net)
+
+ PWMA/reg2_b15|PWMA/reg3_b15.clk                                                     1.272
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.119
+ Required time                                                                      11.275
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.213 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point PWMA/reg3_b7.F (183 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      0.905 ns                                                        
+ StartPoint:              PWMA/reg2_b19|PWMA/reg3_b19.clk (rising edge triggered by clock clk100m)
+ EndPoint:                PWMA/reg3_b7.a[1] (rising edge triggered by clock clk100m)      
+ Clock group:             clk100m                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ PWMA/reg2_b19|PWMA/reg3_b19.clk                             clock                   1.473
+ launch clock edge                                           clock                   0.000
+ PWMA/reg2_b19|PWMA/reg3_b19.q[0]                            cell                    0.146
+ _al_u2821|U_AHB/reg21_b30.d[0] (PWMA/RemaTxNum[19])         net (fanout = 4)        1.101 src/OnePWM.v(8)
+ _al_u2821|U_AHB/reg21_b30.f[0]                              cell                    0.274
+ U_AHB/reg20_b10|U_AHB/reg20_b9.a[0] (_al_u2500_o)           net (fanout = 1)        1.037               
+ U_AHB/reg20_b10|U_AHB/reg20_b9.f[0]                         cell                    0.443
+ U_AHB/reg24_b10|U_AHB/reg24_b28.a[0] (_al_u2501_o)          net (fanout = 1)        0.704               
+ U_AHB/reg24_b10|U_AHB/reg24_b28.f[0]                        cell                    0.443
+ U_AHB/reg26_b31|U_AHB/reg26_b28.a[0] (_al_u2502_o)          net (fanout = 2)        1.025               
+ U_AHB/reg26_b31|U_AHB/reg26_b28.f[0]                        cell                    0.427
+ U_AHB/reg28_b13|U_AHB/reg28_b7.b[0] (PWMA/n25_neg_lutinv)   net (fanout = 26)       1.088               
+ U_AHB/reg28_b13|U_AHB/reg28_b7.f[0]                         cell                    0.348
+ PWMA/reg3_b7.a[1] (_al_u2511_o)                             net (fanout = 2)        1.861 src/OnePWM.v(8)
+ Arrival time                                                                       10.370 (6 lvl)
+                                                                                          (35% logic, 65% net)
+
+ PWMA/reg3_b7.clk                                                                    1.272
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.119
+ Required time                                                                      11.275
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.905 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      0.905 ns                                                        
+ StartPoint:              PWMA/reg2_b19|PWMA/reg3_b19.clk (rising edge triggered by clock clk100m)
+ EndPoint:                PWMA/reg3_b7.a[0] (rising edge triggered by clock clk100m)      
+ Clock group:             clk100m                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ PWMA/reg2_b19|PWMA/reg3_b19.clk                             clock                   1.473
+ launch clock edge                                           clock                   0.000
+ PWMA/reg2_b19|PWMA/reg3_b19.q[0]                            cell                    0.146
+ _al_u2821|U_AHB/reg21_b30.d[0] (PWMA/RemaTxNum[19])         net (fanout = 4)        1.101 src/OnePWM.v(8)
+ _al_u2821|U_AHB/reg21_b30.f[0]                              cell                    0.274
+ U_AHB/reg20_b10|U_AHB/reg20_b9.a[0] (_al_u2500_o)           net (fanout = 1)        1.037               
+ U_AHB/reg20_b10|U_AHB/reg20_b9.f[0]                         cell                    0.443
+ U_AHB/reg24_b10|U_AHB/reg24_b28.a[0] (_al_u2501_o)          net (fanout = 1)        0.704               
+ U_AHB/reg24_b10|U_AHB/reg24_b28.f[0]                        cell                    0.443
+ U_AHB/reg26_b31|U_AHB/reg26_b28.a[0] (_al_u2502_o)          net (fanout = 2)        1.025               
+ U_AHB/reg26_b31|U_AHB/reg26_b28.f[0]                        cell                    0.427
+ U_AHB/reg28_b13|U_AHB/reg28_b7.b[0] (PWMA/n25_neg_lutinv)   net (fanout = 26)       1.088               
+ U_AHB/reg28_b13|U_AHB/reg28_b7.f[0]                         cell                    0.348
+ PWMA/reg3_b7.a[0] (_al_u2511_o)                             net (fanout = 2)        1.861 src/OnePWM.v(8)
+ Arrival time                                                                       10.370 (6 lvl)
+                                                                                          (35% logic, 65% net)
+
+ PWMA/reg3_b7.clk                                                                    1.272
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.119
+ Required time                                                                      11.275
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.905 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      0.928 ns                                                        
+ StartPoint:              PWMA/reg2_b18|PWMA/reg3_b18.clk (rising edge triggered by clock clk100m)
+ EndPoint:                PWMA/reg3_b7.a[1] (rising edge triggered by clock clk100m)      
+ Clock group:             clk100m                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ PWMA/reg2_b18|PWMA/reg3_b18.clk                             clock                   1.473
+ launch clock edge                                           clock                   0.000
+ PWMA/reg2_b18|PWMA/reg3_b18.q[0]                            cell                    0.146
+ _al_u2821|U_AHB/reg21_b30.a[0] (PWMA/RemaTxNum[18])         net (fanout = 4)        0.909 src/OnePWM.v(8)
+ _al_u2821|U_AHB/reg21_b30.f[0]                              cell                    0.443
+ U_AHB/reg20_b10|U_AHB/reg20_b9.a[0] (_al_u2500_o)           net (fanout = 1)        1.037               
+ U_AHB/reg20_b10|U_AHB/reg20_b9.f[0]                         cell                    0.443
+ U_AHB/reg24_b10|U_AHB/reg24_b28.a[0] (_al_u2501_o)          net (fanout = 1)        0.704               
+ U_AHB/reg24_b10|U_AHB/reg24_b28.f[0]                        cell                    0.443
+ U_AHB/reg26_b31|U_AHB/reg26_b28.a[0] (_al_u2502_o)          net (fanout = 2)        1.025               
+ U_AHB/reg26_b31|U_AHB/reg26_b28.f[0]                        cell                    0.427
+ U_AHB/reg28_b13|U_AHB/reg28_b7.b[0] (PWMA/n25_neg_lutinv)   net (fanout = 26)       1.088               
+ U_AHB/reg28_b13|U_AHB/reg28_b7.f[0]                         cell                    0.348
+ PWMA/reg3_b7.a[1] (_al_u2511_o)                             net (fanout = 2)        1.861 src/OnePWM.v(8)
+ Arrival time                                                                       10.347 (6 lvl)
+                                                                                          (36% logic, 64% net)
+
+ PWMA/reg3_b7.clk                                                                    1.272
+ capture clock edge                                                                 10.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.119
+ Required time                                                                      11.275
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.928 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point PWM4/reg1_b2|PWM4/reg1_b18.F (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.411 ns                                                        
+ StartPoint:              PWM4/sub0/ucin_al_u3391.clk (rising edge triggered by clock clk100m)
+ EndPoint:                PWM4/reg1_b2|PWM4/reg1_b18.mi[1] (rising edge triggered by clock clk100m)
+ Clock group:             clk100m                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ PWM4/sub0/ucin_al_u3391.clk                                 clock                   1.272
+ launch clock edge                                           clock                   0.000
+ PWM4/sub0/ucin_al_u3391.q[0]                                cell                    0.140
+ PWM4/reg1_b2|PWM4/reg1_b18.mi[1] (freq4[2])                 net (fanout = 2)        0.427 CPLD_SOC_AHB_TOP.v(55)
+ Arrival time                                                                        1.839 (1 lvl)
+                                                                                          (77% logic, 23% net)
+
+ PWM4/reg1_b2|PWM4/reg1_b18.clk                                                      1.473
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.119
+ Required time                                                                       1.428
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.411 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point PWMC/reg1_b22|PWMC/reg1_b21.F (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.411 ns                                                        
+ StartPoint:              U_AHB/reg13_b19|U_AHB/reg13_b22.clk (rising edge triggered by clock clk100m)
+ EndPoint:                PWMC/reg1_b22|PWMC/reg1_b21.mi[1] (rising edge triggered by clock clk100m)
+ Clock group:             clk100m                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ U_AHB/reg13_b19|U_AHB/reg13_b22.clk                         clock                   1.272
+ launch clock edge                                           clock                   0.000
+ U_AHB/reg13_b19|U_AHB/reg13_b22.q[0]                        cell                    0.140
+ PWMC/reg1_b22|PWMC/reg1_b21.mi[1] (freqC[22])               net (fanout = 2)        0.427 CPLD_SOC_AHB_TOP.v(55)
+ Arrival time                                                                        1.839 (1 lvl)
+                                                                                          (77% logic, 23% net)
+
+ PWMC/reg1_b22|PWMC/reg1_b21.clk                                                     1.473
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.119
+ Required time                                                                       1.428
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.411 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point PWMF/reg1_b23|PWMF/reg1_b0.F (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.411 ns                                                        
+ StartPoint:              U_AHB/reg16_b23|U_AHB/reg16_b3.clk (rising edge triggered by clock clk100m)
+ EndPoint:                PWMF/reg1_b23|PWMF/reg1_b0.mi[1] (rising edge triggered by clock clk100m)
+ Clock group:             clk100m                                                         
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ U_AHB/reg16_b23|U_AHB/reg16_b3.clk                          clock                   1.272
+ launch clock edge                                           clock                   0.000
+ U_AHB/reg16_b23|U_AHB/reg16_b3.q[1]                         cell                    0.140
+ PWMF/reg1_b23|PWMF/reg1_b0.mi[1] (freqF[23])                net (fanout = 2)        0.427 CPLD_SOC_AHB_TOP.v(55)
+ Arrival time                                                                        1.839 (1 lvl)
+                                                                                          (77% logic, 23% net)
+
+ PWMF/reg1_b23|PWMF/reg1_b0.clk                                                      1.473
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.119
+ Required time                                                                       1.428
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.411 ns
+
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing summary:                                                                           
+---------------------------------------------------------------------------------------------------------
+Constraint path number: 203654 (STA coverage = 93.15%)
+Timing violations: 1 setup errors, and 0 hold errors.
+Minimal setup slack: -1.026, minimal hold slack: 0.411
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  clk100m (100.000MHz)                          11.026ns      90.695MHz        0.084ns      1696       -1.026ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+
+Warning: there is 1 clock net without clock constraint.
+	clk25m
+
+---------------------------------------------------------------------------------------------------------

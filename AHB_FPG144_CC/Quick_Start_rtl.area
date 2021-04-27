@@ -1,0 +1,34 @@
+standard
+***Report Model: CPLD_SOC_AHB_TOP***
+
+IO Statistics
+#IO                   102
+  #input               34
+  #output              68
+  #inout                0
+
+Gate Statistics
+#Basic gates         4391
+  #and                720
+  #nand                 0
+  #or                 506
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                144
+  #bufif1               0
+  #MX21                91
+  #FADD                 0
+  #DFF               2930
+  #LATCH                0
+#MACRO_ADD             33
+#MACRO_EQ              88
+#MACRO_MUX           2773
+
+Report Hierarchy Area:
++---------------------------------------------------+
+|Instance |Module           |gates  |seq    |macros |
++---------------------------------------------------+
+|top      |CPLD_SOC_AHB_TOP |1461   |2930   |121    |
++---------------------------------------------------+

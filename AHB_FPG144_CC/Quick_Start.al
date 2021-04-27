@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+    <Project_Created_Time>2019-08-12 09:40:16</Project_Created_Time>
+    <TD_Version>4.5.12562</TD_Version>
+    <UCode>00000000</UCode>
+    <Name>Quick_Start</Name>
+    <HardWare>
+        <Family>EF2</Family>
+        <Device>EF2L45LG144B</Device>
+    </HardWare>
+    <Source_Files>
+        <Verilog>
+            <File>CPLD_SOC_AHB_TOP.v</File>
+            <File>al_ip/PLL.v</File>
+            <File>al_ip/M3WithAHB.v</File>
+            <File>src/AHB.v</File>
+            <File>src/OnePWM.v</File>
+        </Verilog>
+        <ADC_FILE>EF2L45BG144B.adc</ADC_FILE>
+        <SDC_FILE>Quick_Start.sdc</SDC_FILE>
+        <CWC_FILE/>
+    </Source_Files>
+    <TOP_MODULE>
+        <LABEL/>
+        <MODULE>CPLD_SOC_AHB_TOP</MODULE>
+        <CREATEINDEX>user</CREATEINDEX>
+    </TOP_MODULE>
+    <Property>
+        <BitgenProperty::GeneralOption>
+            <data_ram/>
+            <instruct_ram>../AHB_SDK144_CC/Quick_Start.bin</instruct_ram>
+            <s>off</s>
+        </BitgenProperty::GeneralOption>
+        <GateProperty>
+            <pack_effort>high</pack_effort>
+        </GateProperty>
+        <PlaceProperty/>
+    </Property>
+    <Project_Settings>
+        <Step_Last_Change>2019-12-19 17:54:00</Step_Last_Change>
+        <Current_Step>60</Current_Step>
+        <Step_Status>true</Step_Status>
+    </Project_Settings>
+</Project>

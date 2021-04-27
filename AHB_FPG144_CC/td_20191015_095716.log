@@ -1,0 +1,48 @@
+============================================================
+   Tang Dynasty, V4.5.12562
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/Anlogic/TD4.5.12562/bin/td.exe
+   Built at =   11:23:57 Jun  4 2019
+   Run by =     Administrator
+   Run Date =   Tue Oct 15 09:57:16 2019
+
+   Run on =     PC-20190811NNTS
+============================================================
+RUN-1002 : start command "import_device ef2_4.db -package EF2M45LG64B -basic"
+ARC-1001 : Device Initialization.
+ARC-1001 : -----------------------------------------------------
+ARC-1001 :       OPTION       |        IO         |   SETTING   
+ARC-1001 : -----------------------------------------------------
+ARC-1001 :      programn      |        P5         |  dedicated  
+ARC-1001 :   tdi/tms/tck/tdo  |  P15/P13/P14/P16  |  dedicated  
+ARC-1001 : -----------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "read_verilog -file al_ip/M3WithAHB.v"
+HDL-1007 : analyze verilog file al_ip/M3WithAHB.v
+HDL-5007 WARNING: port 'i2s_mst_clk' is not connected on this instance in al_ip/M3WithAHB.v(62)
+HDL-5007 WARNING: port 'sleep_out' remains unconnected for this instance in al_ip/M3WithAHB.v(62)
+HDL-1007 : elaborate module M3WithAHB in al_ip/M3WithAHB.v(14)
+HDL-1007 : elaborate module EF2_PHY_MCU(GPIO_L0="ENABLE",GPIO_L1="ENABLE",GPIO_L8="ENABLE",GPIO_L9="ENABLE") in C:/Anlogic/TD4.5.12562/arch/ef2_macro.v(780)
+HDL-5007 WARNING: input port 'i2s_mst_clk' is not connected on this instance in al_ip/M3WithAHB.v(46)
+HDL-1200 : Current top model is M3WithAHB
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD4.5.12562/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "M3WithAHB"
+SYN-1011 : Flatten model M3WithAHB
+SYN-1014 : Optimize round 1
+SYN-1032 : 116/0 useful/useless nets, 2/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+RUN-1002 : start command "map_macro -nopad"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 116/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 116/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 116/1 useful/useless nets, 3/1 useful/useless insts
+RUN-1002 : start command "write_verilog al_ip/M3WithAHB_sim.v"
+HDL-1201 : write out verilog file al_ip/M3WithAHB_sim.v

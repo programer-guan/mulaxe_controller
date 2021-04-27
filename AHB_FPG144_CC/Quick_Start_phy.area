@@ -1,0 +1,135 @@
+standard
+***Report Model: CPLD_SOC_AHB_TOP***
+
+IO Statistics
+#IO                   102
+  #input               34
+  #output              68
+  #inout                0
+
+Utilization Statistics
+#lut                 4107   out of   4480   91.67%
+#reg                 2929   out of   4480   65.38%
+#le                  4107
+  #lut only          1178   out of   4107   28.68%
+  #reg only             0   out of   4107    0.00%
+  #lut&reg           2929   out of   4107   71.32%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                  102   out of    109   93.58%
+  #ireg                 0
+  #oreg                 1
+  #treg                 0
+#pll                    1   out of      1  100.00%
+
+
+Detailed IO Report
+
+Name             Direction     Location     IOStandard     DriveStrength     
+clkin            INPUT         P28          LVCMOS25       N/A               
+limit_l[15]      INPUT         P87          LVCMOS25       N/A               
+limit_l[14]      INPUT         P85          LVCMOS25       N/A               
+limit_l[13]      INPUT         P1           LVCMOS25       N/A               
+limit_l[12]      INPUT         P69          LVCMOS25       N/A               
+limit_l[11]      INPUT         P67          LVCMOS25       N/A               
+limit_l[10]      INPUT         P65          LVCMOS25       N/A               
+limit_l[9]       INPUT         P34          LVCMOS25       N/A               
+limit_l[8]       INPUT         P33          LVCMOS25       N/A               
+limit_l[7]       INPUT         P89          LVCMOS25       N/A               
+limit_l[6]       INPUT         P2           LVCMOS25       N/A               
+limit_l[5]       INPUT         P6           LVCMOS25       N/A               
+limit_l[4]       INPUT         P60          LVCMOS25       N/A               
+limit_l[3]       INPUT         P58          LVCMOS25       N/A               
+limit_l[2]       INPUT         P56          LVCMOS25       N/A               
+limit_l[1]       INPUT         P50          LVCMOS25       N/A               
+limit_l[0]       INPUT         P41          LVCMOS25       N/A               
+limit_r[15]      INPUT         P95          LVCMOS25       N/A               
+limit_r[14]      INPUT         P81          LVCMOS25       N/A               
+limit_r[13]      INPUT         P3           LVCMOS25       N/A               
+limit_r[12]      INPUT         P5           LVCMOS25       N/A               
+limit_r[11]      INPUT         P68          LVCMOS25       N/A               
+limit_r[10]      INPUT         P35          LVCMOS25       N/A               
+limit_r[9]       INPUT         P94          LVCMOS25       N/A               
+limit_r[8]       INPUT         P86          LVCMOS25       N/A               
+limit_r[7]       INPUT         P82          LVCMOS25       N/A               
+limit_r[6]       INPUT         P4           LVCMOS25       N/A               
+limit_r[5]       INPUT         P70          LVCMOS25       N/A               
+limit_r[4]       INPUT         P59          LVCMOS25       N/A               
+limit_r[3]       INPUT         P57          LVCMOS25       N/A               
+limit_r[2]       INPUT         P55          LVCMOS25       N/A               
+limit_r[1]       INPUT         P49          LVCMOS25       N/A               
+limit_r[0]       INPUT         P40          LVCMOS25       N/A               
+rst_n            INPUT         P38          LVCMOS25       N/A               
+dir[15]          OUTPUT        P142         LVCMOS25       8                 
+dir[14]          OUTPUT        P54          LVCMOS25       8                 
+dir[13]          OUTPUT        P48          LVCMOS25       8                 
+dir[12]          OUTPUT        P45          LVCMOS25       8                 
+dir[11]          OUTPUT        P43          LVCMOS25       8                 
+dir[10]          OUTPUT        P106         LVCMOS25       16                
+dir[9]           OUTPUT        P42          LVCMOS25       8                 
+dir[8]           OUTPUT        P114         LVCMOS25       8                 
+dir[7]           OUTPUT        P122         LVCMOS25       8                 
+dir[6]           OUTPUT        P24          LVCMOS25       16                
+dir[5]           OUTPUT        P23          LVCMOS25       16                
+dir[4]           OUTPUT        P22          LVCMOS25       16                
+dir[3]           OUTPUT        P132         LVCMOS25       8                 
+dir[2]           OUTPUT        P133         LVCMOS25       8                 
+dir[1]           OUTPUT        P21          LVCMOS25       16                
+dir[0]           OUTPUT        P138         LVCMOS25       8                 
+gpio_out[31]     OUTPUT        P10          LVCMOS25       8                 
+gpio_out[30]     OUTPUT        P120         LVCMOS25       8                 
+gpio_out[29]     OUTPUT        P19          LVCMOS25       8                 
+gpio_out[28]     OUTPUT        P61          LVCMOS25       8                 
+gpio_out[27]     OUTPUT        P62          LVCMOS25       8                 
+gpio_out[26]     OUTPUT        P91          LVCMOS25       8                 
+gpio_out[25]     OUTPUT        P109         LVCMOS25       8                 
+gpio_out[24]     OUTPUT        P143         LVCMOS25       8                 
+gpio_out[23]     OUTPUT        P71          LVCMOS25       8                 
+gpio_out[22]     OUTPUT        P73          LVCMOS25       8                 
+gpio_out[21]     OUTPUT        P11          LVCMOS25       8                 
+gpio_out[20]     OUTPUT        P13          LVCMOS25       8                 
+gpio_out[19]     OUTPUT        P39          LVCMOS25       8                 
+gpio_out[18]     OUTPUT        P74          LVCMOS25       8                 
+gpio_out[17]     OUTPUT        P110         LVCMOS25       8                 
+gpio_out[16]     OUTPUT        P140         LVCMOS25       8                 
+gpio_out[15]     OUTPUT        P75          LVCMOS25       8                 
+gpio_out[14]     OUTPUT        P9           LVCMOS25       8                 
+gpio_out[13]     OUTPUT        P139         LVCMOS25       8                 
+gpio_out[12]     OUTPUT        P76          LVCMOS25       8                 
+gpio_out[11]     OUTPUT        P83          LVCMOS25       8                 
+gpio_out[10]     OUTPUT        P12          LVCMOS25       8                 
+gpio_out[9]      OUTPUT        P77          LVCMOS25       8                 
+gpio_out[8]      OUTPUT        P84          LVCMOS25       8                 
+gpio_out[7]      OUTPUT        P14          LVCMOS25       8                 
+gpio_out[6]      OUTPUT        P78          LVCMOS25       8                 
+gpio_out[5]      OUTPUT        P97          LVCMOS25       8                 
+gpio_out[4]      OUTPUT        P15          LVCMOS25       8                 
+gpio_out[3]      OUTPUT        P92          LVCMOS25       8                 
+gpio_out[2]      OUTPUT        P17          LVCMOS25       8                 
+gpio_out[1]      OUTPUT        P93          LVCMOS25       8                 
+gpio_out[0]      OUTPUT        P98          LVCMOS25       8                 
+ledout[3]        OUTPUT        P100         LVCMOS25       16                
+ledout[2]        OUTPUT        P103         LVCMOS25       16                
+ledout[1]        OUTPUT        P104         LVCMOS25       16                
+ledout[0]        OUTPUT        P105         LVCMOS25       16                
+pwm[15]          OUTPUT        P111         LVCMOS25       8                 
+pwm[14]          OUTPUT        P112         LVCMOS25       8                 
+pwm[13]          OUTPUT        P115         LVCMOS25       8                 
+pwm[12]          OUTPUT        P117         LVCMOS25       8                 
+pwm[11]          OUTPUT        P52          LVCMOS25       8                 
+pwm[10]          OUTPUT        P47          LVCMOS25       8                 
+pwm[9]           OUTPUT        P44          LVCMOS25       8                 
+pwm[8]           OUTPUT        P107         LVCMOS25       16                
+pwm[7]           OUTPUT        P113         LVCMOS25       8                 
+pwm[6]           OUTPUT        P121         LVCMOS25       8                 
+pwm[5]           OUTPUT        P25          LVCMOS25       16                
+pwm[4]           OUTPUT        P125         LVCMOS25       8                 
+pwm[3]           OUTPUT        P126         LVCMOS25       8                 
+pwm[2]           OUTPUT        P127         LVCMOS25       8                 
+pwm[1]           OUTPUT        P128         LVCMOS25       8                 
+pwm[0]           OUTPUT        P141         LVCMOS25       8                 
+

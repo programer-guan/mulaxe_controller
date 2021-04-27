@@ -1,0 +1,76 @@
+set_pin_assignment {clkin} { LOCATION = P28;  	}
+set_pin_assignment {rst_n} { LOCATION = P38;  	}
+
+set_pin_assignment {ledout[0]} { LOCATION = P105;}
+set_pin_assignment {ledout[1]} { LOCATION = P104;}
+set_pin_assignment {ledout[2]} { LOCATION = P103;}
+set_pin_assignment {ledout[3]} { LOCATION = P100;}
+#------------------------------------------------------------
+set_pin_assignment {pwm[0]}  { LOCATION = P141;  }
+set_pin_assignment {pwm[1]}  { LOCATION = P128;  }
+set_pin_assignment {pwm[2]}  { LOCATION = P127;  }
+set_pin_assignment {pwm[3]}  { LOCATION = P126;  }
+set_pin_assignment {pwm[4]}  { LOCATION = P125;  }
+set_pin_assignment {pwm[5]}  { LOCATION = P25;   }
+set_pin_assignment {pwm[6]}  { LOCATION = P121;  }
+set_pin_assignment {pwm[7]}  { LOCATION = P113;  }
+set_pin_assignment {pwm[8]}  { LOCATION = P107;  }
+set_pin_assignment {pwm[9]}  { LOCATION = P44;   }
+set_pin_assignment {pwm[10]} { LOCATION = P47;   }
+set_pin_assignment {pwm[11]} { LOCATION = P52;   }
+set_pin_assignment {pwm[12]} { LOCATION = P117;  }
+set_pin_assignment {pwm[13]} { LOCATION = P115;  }
+set_pin_assignment {pwm[14]} { LOCATION = P112;  }
+set_pin_assignment {pwm[15]} { LOCATION = P111;  }
+#------------------------------------------------------------
+set_pin_assignment {dir[0]}  { LOCATION = P138; }
+set_pin_assignment {dir[1]}  { LOCATION = P21;  }
+set_pin_assignment {dir[2]}  { LOCATION = P133; }
+set_pin_assignment {dir[3]}  { LOCATION = P132; }
+set_pin_assignment {dir[4]}  { LOCATION = P22;  }
+set_pin_assignment {dir[5]}  { LOCATION = P23;  }
+set_pin_assignment {dir[6]}  { LOCATION = P24;  }
+set_pin_assignment {dir[7]}  { LOCATION = P122; }
+set_pin_assignment {dir[8]}  { LOCATION = P114; }
+set_pin_assignment {dir[9]}  { LOCATION = P42;  }
+set_pin_assignment {dir[10]} { LOCATION = P106; }
+set_pin_assignment {dir[11]} { LOCATION = P43;  }
+set_pin_assignment {dir[12]} { LOCATION = P45;  }
+set_pin_assignment {dir[13]} { LOCATION = P48;  }
+set_pin_assignment {dir[14]} { LOCATION = P54;  }
+set_pin_assignment {dir[15]} { LOCATION = P142; }
+#------------------------------------------------------------
+set_pin_assignment {limit_l[0]}  { LOCATION = P41; }
+set_pin_assignment {limit_l[1]}  { LOCATION = P50; }
+set_pin_assignment {limit_l[2]}  { LOCATION = P56; }
+set_pin_assignment {limit_l[3]}  { LOCATION = P58; }
+set_pin_assignment {limit_l[4]}  { LOCATION = P60; }
+set_pin_assignment {limit_l[5]}  { LOCATION = P6;  }
+set_pin_assignment {limit_l[6]}  { LOCATION = P2;  }
+set_pin_assignment {limit_l[7]}  { LOCATION = P89; }
+set_pin_assignment {limit_l[8]}  { LOCATION = P33; }
+set_pin_assignment {limit_l[9]}  { LOCATION = P34; }
+set_pin_assignment {limit_l[10]} { LOCATION = P65; }
+set_pin_assignment {limit_l[11]} { LOCATION = P67; }
+set_pin_assignment {limit_l[12]} { LOCATION = P69; }
+set_pin_assignment {limit_l[13]} { LOCATION = P1;  }
+set_pin_assignment {limit_l[14]} { LOCATION = P85; }
+set_pin_assignment {limit_l[15]} { LOCATION = P87; }
+
+#------------------------------------------------------------
+set_pin_assignment {limit_r[0]}  { LOCATION = P40; }
+set_pin_assignment {limit_r[1]}  { LOCATION = P49; }
+set_pin_assignment {limit_r[2]}  { LOCATION = P55; }
+set_pin_assignment {limit_r[3]}  { LOCATION = P57; }
+set_pin_assignment {limit_r[4]}  { LOCATION = P59; }
+set_pin_assignment {limit_r[5]}  { LOCATION = P70; }
+set_pin_assignment {limit_r[6]}  { LOCATION = P4;  }
+set_pin_assignment {limit_r[7]}  { LOCATION = P82; }
+set_pin_assignment {limit_r[8]}  { LOCATION = P86; }
+set_pin_assignment {limit_r[9]}  { LOCATION = P94; }
+set_pin_assignment {limit_r[10]} { LOCATION = P35; }
+set_pin_assignment {limit_r[11]} { LOCATION = P68; }
+set_pin_assignment {limit_r[12]} { LOCATION = P5;  }
+set_pin_assignment {limit_r[13]} { LOCATION = P3;  }
+set_pin_assignment {limit_r[14]} { LOCATION = P81; }
+set_pin_assignment {limit_r[15]} { LOCATION = P95; }

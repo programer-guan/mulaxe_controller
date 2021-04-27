@@ -1,0 +1,161 @@
+ef2_4
+13 23 352 5930 203654 1 0
+-1.026 0.411 CPLD_SOC_AHB_TOP ef2_4 EF2L45LG144B Detail 9 1
+clock: clk100m
+13 203654 5930 2
+Setup check
+23 3
+Endpoint: U_AHB/reg35_b23.F
+23 -1.026000 273 3
+Timing path: U_AHB/reg0_b10|U_AHB/reg0_b2.clk->U_AHB/reg35_b23.F
+U_AHB/reg0_b10|U_AHB/reg0_b2.clk
+U_AHB/reg35_b23.F
+25 -1.026000 11.275000 12.301000 7 7
+U_AHB/h2h_haddr[4] U_AHB/reg15_b5|U_AHB/reg15_b6.c[0]
+U_AHB/n90 _al_u3168|U_AHB/reg6_b19.b[1]
+_al_u3168_o _al_u3168|U_AHB/reg6_b19.d[0]
+_al_u3169_o _al_u2177|U_AHB/reg19_b9.a[0]
+_al_u3170_o _al_u2419|U_AHB/reg20_b31.a[0]
+_al_u3171_o U_AHB/reg10_b17|U_AHB/reg10_b16.a[1]
+_al_u3172_o U_AHB/reg35_b23.a[1]
+
+Timing path: U_AHB/reg0_b10|U_AHB/reg0_b2.clk->U_AHB/reg35_b23.F
+U_AHB/reg0_b10|U_AHB/reg0_b2.clk
+U_AHB/reg35_b23.F
+62 -1.026000 11.275000 12.301000 7 7
+U_AHB/h2h_haddr[4] U_AHB/reg15_b5|U_AHB/reg15_b6.c[0]
+U_AHB/n90 _al_u3168|U_AHB/reg6_b19.b[1]
+_al_u3168_o _al_u3168|U_AHB/reg6_b19.d[0]
+_al_u3169_o _al_u2177|U_AHB/reg19_b9.a[0]
+_al_u3170_o _al_u2419|U_AHB/reg20_b31.a[0]
+_al_u3171_o U_AHB/reg10_b17|U_AHB/reg10_b16.a[1]
+_al_u3172_o U_AHB/reg35_b23.a[0]
+
+Timing path: U_AHB/reg0_b12|U_AHB/reg0_b0.clk->U_AHB/reg35_b23.F
+U_AHB/reg0_b12|U_AHB/reg0_b0.clk
+U_AHB/reg35_b23.F
+99 -0.993000 11.275000 12.268000 7 7
+U_AHB/h2h_haddr[2] U_AHB/reg15_b8|U_AHB/reg15_b4.d[1]
+U_AHB/n95_lutinv U_AHB/reg25_b0|U_AHB/reg25_b1.d[0]
+U_AHB/n96 _al_u3168|U_AHB/reg6_b19.b[0]
+_al_u3169_o _al_u2177|U_AHB/reg19_b9.a[0]
+_al_u3170_o _al_u2419|U_AHB/reg20_b31.a[0]
+_al_u3171_o U_AHB/reg10_b17|U_AHB/reg10_b16.a[1]
+_al_u3172_o U_AHB/reg35_b23.a[1]
+
+
+Endpoint: PWMA/reg2_b15|PWMA/reg3_b15.F
+136 0.870000 100 3
+Timing path: PWMA/reg2_b19|PWMA/reg3_b19.clk->PWMA/reg2_b15|PWMA/reg3_b15.F
+PWMA/reg2_b19|PWMA/reg3_b19.clk
+PWMA/reg2_b15|PWMA/reg3_b15.F
+138 0.870000 11.275000 10.405000 6 6
+PWMA/RemaTxNum[19] _al_u2821|U_AHB/reg21_b30.d[0]
+_al_u2500_o U_AHB/reg20_b10|U_AHB/reg20_b9.a[0]
+_al_u2501_o U_AHB/reg24_b10|U_AHB/reg24_b28.a[0]
+_al_u2502_o U_AHB/reg26_b31|U_AHB/reg26_b28.a[0]
+PWMA/n25_neg_lutinv U_AHB/reg28_b15|U_AHB/reg28_b5.b[1]
+_al_u2539_o PWMA/reg2_b15|PWMA/reg3_b15.a[0]
+
+Timing path: PWMA/reg2_b18|PWMA/reg3_b18.clk->PWMA/reg2_b15|PWMA/reg3_b15.F
+PWMA/reg2_b18|PWMA/reg3_b18.clk
+PWMA/reg2_b15|PWMA/reg3_b15.F
+173 0.893000 11.275000 10.382000 6 6
+PWMA/RemaTxNum[18] _al_u2821|U_AHB/reg21_b30.a[0]
+_al_u2500_o U_AHB/reg20_b10|U_AHB/reg20_b9.a[0]
+_al_u2501_o U_AHB/reg24_b10|U_AHB/reg24_b28.a[0]
+_al_u2502_o U_AHB/reg26_b31|U_AHB/reg26_b28.a[0]
+PWMA/n25_neg_lutinv U_AHB/reg28_b15|U_AHB/reg28_b5.b[1]
+_al_u2539_o PWMA/reg2_b15|PWMA/reg3_b15.a[0]
+
+Timing path: PWMA/reg3_b20.clk->PWMA/reg2_b15|PWMA/reg3_b15.F
+PWMA/reg3_b20.clk
+PWMA/reg2_b15|PWMA/reg3_b15.F
+208 1.213000 11.275000 10.062000 6 6
+PWMA/RemaTxNum[20] _al_u2821|U_AHB/reg21_b30.b[0]
+_al_u2500_o U_AHB/reg20_b10|U_AHB/reg20_b9.a[0]
+_al_u2501_o U_AHB/reg24_b10|U_AHB/reg24_b28.a[0]
+_al_u2502_o U_AHB/reg26_b31|U_AHB/reg26_b28.a[0]
+PWMA/n25_neg_lutinv U_AHB/reg28_b15|U_AHB/reg28_b5.b[1]
+_al_u2539_o PWMA/reg2_b15|PWMA/reg3_b15.a[0]
+
+
+Endpoint: PWMA/reg3_b7.F
+243 0.905000 183 3
+Timing path: PWMA/reg2_b19|PWMA/reg3_b19.clk->PWMA/reg3_b7.F
+PWMA/reg2_b19|PWMA/reg3_b19.clk
+PWMA/reg3_b7.F
+245 0.905000 11.275000 10.370000 6 6
+PWMA/RemaTxNum[19] _al_u2821|U_AHB/reg21_b30.d[0]
+_al_u2500_o U_AHB/reg20_b10|U_AHB/reg20_b9.a[0]
+_al_u2501_o U_AHB/reg24_b10|U_AHB/reg24_b28.a[0]
+_al_u2502_o U_AHB/reg26_b31|U_AHB/reg26_b28.a[0]
+PWMA/n25_neg_lutinv U_AHB/reg28_b13|U_AHB/reg28_b7.b[0]
+_al_u2511_o PWMA/reg3_b7.a[1]
+
+Timing path: PWMA/reg2_b19|PWMA/reg3_b19.clk->PWMA/reg3_b7.F
+PWMA/reg2_b19|PWMA/reg3_b19.clk
+PWMA/reg3_b7.F
+280 0.905000 11.275000 10.370000 6 6
+PWMA/RemaTxNum[19] _al_u2821|U_AHB/reg21_b30.d[0]
+_al_u2500_o U_AHB/reg20_b10|U_AHB/reg20_b9.a[0]
+_al_u2501_o U_AHB/reg24_b10|U_AHB/reg24_b28.a[0]
+_al_u2502_o U_AHB/reg26_b31|U_AHB/reg26_b28.a[0]
+PWMA/n25_neg_lutinv U_AHB/reg28_b13|U_AHB/reg28_b7.b[0]
+_al_u2511_o PWMA/reg3_b7.a[0]
+
+Timing path: PWMA/reg2_b18|PWMA/reg3_b18.clk->PWMA/reg3_b7.F
+PWMA/reg2_b18|PWMA/reg3_b18.clk
+PWMA/reg3_b7.F
+315 0.928000 11.275000 10.347000 6 6
+PWMA/RemaTxNum[18] _al_u2821|U_AHB/reg21_b30.a[0]
+_al_u2500_o U_AHB/reg20_b10|U_AHB/reg20_b9.a[0]
+_al_u2501_o U_AHB/reg24_b10|U_AHB/reg24_b28.a[0]
+_al_u2502_o U_AHB/reg26_b31|U_AHB/reg26_b28.a[0]
+PWMA/n25_neg_lutinv U_AHB/reg28_b13|U_AHB/reg28_b7.b[0]
+_al_u2511_o PWMA/reg3_b7.a[1]
+
+
+
+Hold check
+350 3
+Endpoint: PWM4/reg1_b2|PWM4/reg1_b18.F
+352 0.411000 1 1
+Timing path: PWM4/sub0/ucin_al_u3391.clk->PWM4/reg1_b2|PWM4/reg1_b18.F
+PWM4/sub0/ucin_al_u3391.clk
+PWM4/reg1_b2|PWM4/reg1_b18.F
+354 0.411000 1.428000 1.839000 1 1
+freq4[2] PWM4/reg1_b2|PWM4/reg1_b18.mi[1]
+
+
+Endpoint: PWMC/reg1_b22|PWMC/reg1_b21.F
+379 0.411000 1 1
+Timing path: U_AHB/reg13_b19|U_AHB/reg13_b22.clk->PWMC/reg1_b22|PWMC/reg1_b21.F
+U_AHB/reg13_b19|U_AHB/reg13_b22.clk
+PWMC/reg1_b22|PWMC/reg1_b21.F
+381 0.411000 1.428000 1.839000 1 1
+freqC[22] PWMC/reg1_b22|PWMC/reg1_b21.mi[1]
+
+
+Endpoint: PWMF/reg1_b23|PWMF/reg1_b0.F
+406 0.411000 1 1
+Timing path: U_AHB/reg16_b23|U_AHB/reg16_b3.clk->PWMF/reg1_b23|PWMF/reg1_b0.F
+U_AHB/reg16_b23|U_AHB/reg16_b3.clk
+PWMF/reg1_b23|PWMF/reg1_b0.F
+408 0.411000 1.428000 1.839000 1 1
+freqF[23] PWMF/reg1_b23|PWMF/reg1_b0.mi[1]
+
+
+
+
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  clk100m (100.000MHz)                          11.026ns      90.695MHz        0.084ns      1696       -1.026ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+Warning: there is 1 clock net without clock constraint.
+	clk25m
+

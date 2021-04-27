@@ -1,0 +1,16 @@
+.\objects\exti_demo.o: src\exti_demo.c
+.\objects\exti_demo.o: ..\..\..\ELF2_BSP\Device\ELF2\Include\elf2.h
+.\objects\exti_demo.o: ..\..\..\ELF2_BSP\CMSIS\Core\Include\core_cm3.h
+.\objects\exti_demo.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\exti_demo.o: ..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_version.h
+.\objects\exti_demo.o: ..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\exti_demo.o: ..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\exti_demo.o: ..\..\..\ELF2_BSP\CMSIS\Core\Include\mpu_armv7.h
+.\objects\exti_demo.o: ..\..\..\ELF2_BSP\Device\ELF2\Include\system_elf2.h
+.\objects\exti_demo.o: ..\..\..\ELF2_BSP\Driver\exti.h
+.\objects\exti_demo.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\exti_demo.o: ..\..\..\ELF2_BSP\Driver\uart.h
+.\objects\exti_demo.o: src\exti_demo.h
+.\objects\exti_demo.o: src\pulse_demo.h
+.\objects\exti_demo.o: ..\..\..\ELF2_BSP\Driver\int_register.h
+.\objects\exti_demo.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h

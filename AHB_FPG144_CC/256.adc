@@ -1,0 +1,25 @@
+set_pin_assignment {clkin} { LOCATION = J1;  }
+set_pin_assignment {rst_n} { LOCATION = G15;  }
+
+set_pin_assignment {rs232_tx} { LOCATION = K15;  }
+set_pin_assignment {rs232_rx} { LOCATION = J15;  }
+
+set_pin_assignment {led_out[0]} { LOCATION = C15;}
+set_pin_assignment {led_out[1]} { LOCATION = D16;}
+
+set_pin_assignment {pwm[0]}  { LOCATION = D9;   }
+set_pin_assignment {pwm[1]}  { LOCATION = E8;   }
+set_pin_assignment {pwm[2]}  { LOCATION = F8;   }
+set_pin_assignment {pwm[3]}  { LOCATION = F7;   }
+set_pin_assignment {pwm[4]}  { LOCATION = D14;  }
+set_pin_assignment {pwm[5]}  { LOCATION = E10;  }
+set_pin_assignment {pwm[6]}  { LOCATION = B14;  }
+set_pin_assignment {pwm[7]}  { LOCATION = A14;  }
+set_pin_assignment {pwm[8]}  { LOCATION = B12;  }
+set_pin_assignment {pwm[9]}  { LOCATION = B11;  }
+set_pin_assignment {pwm[10]} { LOCATION = C9;   }
+set_pin_assignment {pwm[11]} { LOCATION = A8;   }
+set_pin_assignment {pwm[12]} { LOCATION = C8;   }
+set_pin_assignment {pwm[13]} { LOCATION = B6;   }
+set_pin_assignment {pwm[14]} { LOCATION = A5;   }
+set_pin_assignment {pwm[15]} { LOCATION = A4;   }

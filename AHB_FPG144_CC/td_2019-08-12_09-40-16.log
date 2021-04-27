@@ -1,0 +1,953 @@
+============================================================
+   Tang Dynasty, V4.5.12562
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/Anlogic/TD4.5.12562/bin/td.exe
+   Built at =   11:23:57 Jun  4 2019
+   Run by =     Administrator
+   Run Date =   Mon Aug 12 09:40:16 2019
+
+   Run on =     PC-20190811NNTS
+============================================================
+ARC-1001 : Device Initialization.
+ARC-1001 : -------------------------------------------------
+ARC-1001 :       OPTION       |      IO       |   SETTING   
+ARC-1001 : -------------------------------------------------
+ARC-1001 :        done        |      C13      |    gpio    
+ARC-1001 :        initn       |      A13      |    gpio    
+ARC-1001 :      programn      |      B10      |  dedicated  
+ARC-1001 :   tdi/tms/tck/tdo  |  A6/B8/A7/C6  |  dedicated  
+ARC-1001 : -------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+HDL-1007 : analyze verilog file CPLD_SOC_AHB_TOP.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+HDL-1007 : analyze verilog file al_ip/M3WithAHB.v
+HDL-1007 : analyze verilog file OnePWM.v
+HDL-1007 : analyze verilog file CPLD_SOC_AHB_TOP.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+HDL-1007 : analyze verilog file al_ip/M3WithAHB.v
+HDL-1007 : analyze verilog file OnePWM.v
+RUN-1002 : start command "elaborate -top CPLD_SOC_AHB_TOP"
+HDL-1007 : elaborate module CPLD_SOC_AHB_TOP in CPLD_SOC_AHB_TOP.v(1)
+HDL-1007 : elaborate module PLL in al_ip/PLL.v(25)
+HDL-1007 : elaborate module EF2_PHY_PLL(FIN="25.000",FBCLK_DIV=40,CLKC0_DIV=5,CLKC1_DIV=20,CLKC2_DIV=40,CLKC3_DIV=125,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",CLKC3_ENABLE="ENABLE",FEEDBK_MODE="NOCOMP",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=4,CLKC1_CPHASE=19,CLKC2_CPHASE=39,CLKC3_CPHASE=124,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE",INTPI=3,HIGH_SPEED_EN="ENABLE",OFFSET_MODE="EXT",CLKC0_DUTY=0.5,CLKC1_DUTY=0.5,CLKC0_DUTY_INT=3,CLKC1_DUTY_INT=10) in C:/Anlogic/TD4.5.12562/arch/ef2_macro.v(2693)
+HDL-5007 WARNING: port 'i2s_mst_clk' is not connected on this instance in al_ip/M3WithAHB.v(62)
+HDL-5007 WARNING: port 'sleep_out' remains unconnected for this instance in al_ip/M3WithAHB.v(62)
+HDL-1007 : elaborate module M3WithAHB in al_ip/M3WithAHB.v(14)
+HDL-1007 : elaborate module EF2_PHY_MCU(GPIO_L0="ENABLE",GPIO_L1="ENABLE",GPIO_L3="ENABLE",GPIO_L4="ENABLE") in C:/Anlogic/TD4.5.12562/arch/ef2_macro.v(780)
+HDL-5007 WARNING: input port 'i2s_mst_clk' is not connected on this instance in al_ip/M3WithAHB.v(46)
+HDL-1007 : elaborate module OnePWM in OnePWM.v(1)
+HDL-1200 : Current top model is CPLD_SOC_AHB_TOP
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc 256.adc"
+RUN-1002 : start command "set_pin_assignment clkin  LOCATION = J1;  "
+RUN-1002 : start command "set_pin_assignment pwm[0]  LOCATION = D9;   "
+RUN-1002 : start command "set_pin_assignment pwm[1]  LOCATION = E8;   "
+RUN-1002 : start command "set_pin_assignment pwm[2]  LOCATION = F8;   "
+RUN-1002 : start command "set_pin_assignment pwm[3]  LOCATION = F7;   "
+RUN-1002 : start command "set_pin_assignment pwm[4]  LOCATION = D14;   "
+RUN-1002 : start command "set_pin_assignment pwm[5]  LOCATION = E10;   "
+RUN-1002 : start command "set_pin_assignment pwm[6]  LOCATION = B14;   "
+RUN-1002 : start command "set_pin_assignment pwm[7]  LOCATION = A14;   "
+RUN-1002 : start command "set_pin_assignment pwm[8]  LOCATION = B12;   "
+RUN-1002 : start command "set_pin_assignment pwm[9]  LOCATION = B11;   "
+RUN-1002 : start command "set_pin_assignment pwm[10]  LOCATION = C9;   "
+RUN-1002 : start command "set_pin_assignment pwm[11]  LOCATION = A8;   "
+RUN-1002 : start command "set_pin_assignment pwm[12]  LOCATION = C8;   "
+RUN-1002 : start command "set_pin_assignment pwm[13]  LOCATION = B6;   "
+RUN-1002 : start command "set_pin_assignment pwm[14]  LOCATION = A5;   "
+RUN-1002 : start command "set_pin_assignment pwm[15]  LOCATION = A4;   "
+USR-6010 WARNING: ADC constraints: pin dir[15] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[14] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[13] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[12] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[11] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[10] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[9] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[8] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[7] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[6] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[5] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[4] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[3] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[2] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[1] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[0] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[31] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[30] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[29] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[28] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[27] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[26] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[25] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[24] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[23] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[22] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[21] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[20] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[19] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[18] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[17] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[16] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[15] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[14] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[13] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[12] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[11] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[10] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[9] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[8] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[7] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[6] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[5] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[4] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[3] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[2] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[1] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[0] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[31] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[30] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[29] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[28] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[27] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[26] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[25] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[24] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[23] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[22] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[21] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[20] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[19] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[18] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[17] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[16] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[15] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[14] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[13] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[12] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[11] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[10] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[9] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[8] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[7] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[6] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[5] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[4] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[3] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[2] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[1] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[0] has no constraint.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD4.5.12562/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "CPLD_SOC_AHB_TOP"
+SYN-1012 : SanityCheck: Model "M3WithAHB"
+SYN-1012 : SanityCheck: Model "PLL"
+SYN-1012 : SanityCheck: Model "OnePWM"
+SYN-1043 : Mark PLL as IO macro for instance pll_inst
+SYN-1011 : Flatten model CPLD_SOC_AHB_TOP
+SYN-1011 : Flatten model M3WithAHB
+SYN-1011 : Flatten model PLL
+SYN-1011 : Flatten model OnePWM
+SYN-1016 : Merged 49 instances.
+SYN-1014 : Optimize round 1
+SYN-1032 : 8835/823 useful/useless nets, 7971/720 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1021 : Optimized 8 onehot mux instances.
+SYN-1020 : Optimized 496 distributor mux.
+SYN-1016 : Merged 488 instances.
+SYN-1015 : Optimize round 1, 4353 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 7538/2841 useful/useless nets, 6674/512 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 552 better
+SYN-1014 : Optimize round 3
+SYN-1032 : 7538/0 useful/useless nets, 6674/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 3, 0 better
+RUN-1003 : finish command "optimize_rtl" in  2.699087s wall, 2.745618s user + 0.046800s system = 2.792418s CPU (103.5%)
+
+RUN-1004 : used memory is 178 MB, reserved memory is 144 MB, peak memory is 179 MB
+RUN-1002 : start command "report_area -file Quick_Start_rtl.area"
+RUN-1001 : standard
+***Report Model: CPLD_SOC_AHB_TOP***
+
+IO Statistics
+#IO                    97
+  #input               33
+  #output              64
+  #inout                0
+
+Gate Statistics
+#Basic gates         4042
+  #and                705
+  #nand                 0
+  #or                 512
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                147
+  #bufif1               0
+  #MX21                 8
+  #FADD                 0
+  #DFF               2670
+  #LATCH                0
+#MACRO_ADD             32
+#MACRO_EQ              84
+#MACRO_MUX           2512
+
+RUN-1001 : 
+Report Hierarchy Area:
++---------------------------------------------------+
+|Instance |Module           |gates  |seq    |macros |
++---------------------------------------------------+
+|top      |CPLD_SOC_AHB_TOP |1372   |2670   |116    |
++---------------------------------------------------+
+
+RUN-1002 : start command "read_sdc Quick_Start.sdc"
+RUN-1002 : start command "get_nets clk100m"
+RUN-1002 : start command "create_clock -name clk100m -period 10 -waveform 0 5 "
+RUN-1102 : create_clock: clock name: clk100m, type: 0, period: 10000, rise: 0, fall: 5000.
+RUN-1104 : Import SDC file Quick_Start.sdc finished, there are 1 nets kept by constraints.
+RUN-1002 : start command "export_db Quick_Start_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1003 : finish command "export_db Quick_Start_rtl.db" in  1.095396s wall, 1.060807s user + 0.031200s system = 1.092007s CPU (99.7%)
+
+RUN-1004 : used memory is 216 MB, reserved memory is 182 MB, peak memory is 216 MB
+RUN-1002 : start command "optimize_gate -packarea Quick_Start_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD4.5.12562/license/Anlogic.lic
+SYN-2001 : Map 97 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 7700/0 useful/useless nets, 6837/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 10156/0 useful/useless nets, 9293/0 useful/useless insts
+SYN-1016 : Merged 2 instances.
+SYN-2501 : Optimize round 1, 1258 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 10154/0 useful/useless nets, 9291/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 32 macro adder
+SYN-1032 : 11002/0 useful/useless nets, 10139/0 useful/useless insts
+RUN-1002 : start command "start_timer -prepack"
+TMR-2505 : Start building timing graph for model CPLD_SOC_AHB_TOP.
+TMR-2506 : Build timing graph completely. Port num: 5, tpin num: 41352, tnet num: 10993, tinst num: 10114, tnode num: 76783, tedge num: 78196.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 67 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+RUN-1003 : finish command "start_timer -prepack" in  1.262694s wall, 1.232408s user + 0.046800s system = 1.279208s CPU (101.3%)
+
+RUN-1004 : used memory is 333 MB, reserved memory is 299 MB, peak memory is 333 MB
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 10993 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3001 : Initiate 1 clocks from SDC.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=5, #lut = 3013 (4.11), #lev = 7 (3.92)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=5, #lut = 3013 (4.11), #lev = 7 (3.92)
+SYN-2581 : Mapping with K=5, #lut = 3013 (4.11), #lev = 7 (3.92)
+SYN-3001 : Logic optimization runtime opt =   0.94 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 6502 instances into 3013 LUTs, name keeping = 49%.
+SYN-1001 : Packing model "CPLD_SOC_AHB_TOP" ...
+SYN-4010 : Pack lib has 35 rtl pack models with 12 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 7481/0 useful/useless nets, 6618/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 2654 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 16 carry chain into lslice
+SYN-4007 : Packing 400 adder to BLE ...
+SYN-4008 : Packed 400 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 3013 LUT to BLE ...
+SYN-4008 : Packed 3013 LUT and 1296 SEQ to BLE.
+SYN-4003 : Packing 1358 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (1358 nodes)...
+SYN-4004 : #1: Packed 508 SEQ (64505 nodes)...
+SYN-4005 : Packed 508 SEQ with LUT/SLICE
+SYN-4006 : 1209 single LUT's are left
+SYN-4006 : 1358 single SEQ's are left
+SYN-4011 : Packing model "CPLD_SOC_AHB_TOP" (AL_USER_NORMAL) with 3863/4286 primitive instances ...
+RUN-1002 : start command "report_area -file Quick_Start_gate.area"
+RUN-1001 : standard
+***Report Model: CPLD_SOC_AHB_TOP***
+
+IO Statistics
+#IO                    97
+  #input               33
+  #output              64
+  #inout                0
+
+Utilization Statistics
+#lut                 3978   out of   4480   88.79%
+#reg                 2654   out of   4480   59.24%
+#le                  4828
+  #lut only          2174   out of   4828   45.03%
+  #reg only           850   out of   4828   17.61%
+  #lut&reg           1804   out of   4828   37.37%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                   97   out of    202   48.02%
+  #ireg                 0
+  #oreg                16
+  #treg                 0
+#pll                    1   out of      1  100.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++------------------------------------------------+
+|Instance |Module           |le    |lut   |seq   |
++------------------------------------------------+
+|top      |CPLD_SOC_AHB_TOP |4828  |3978  |2654  |
++------------------------------------------------+
+
+RUN-1003 : finish command "optimize_gate -packarea Quick_Start_gate.area" in  12.166004s wall, 11.559674s user + 0.140401s system = 11.700075s CPU (96.2%)
+
+RUN-1004 : used memory is 291 MB, reserved memory is 260 MB, peak memory is 394 MB
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model CPLD_SOC_AHB_TOP
+RUN-1002 : start command "read_sdc Quick_Start.sdc"
+RUN-1002 : start command "get_nets clk100m"
+RUN-1002 : start command "create_clock -name clk100m -period 10 -waveform 0 5 "
+RUN-1102 : create_clock: clock name: clk100m, type: 0, period: 10000, rise: 0, fall: 5000.
+RUN-1104 : Import SDC file Quick_Start.sdc finished, there are 2 nets kept by constraints.
+RUN-1002 : start command "export_db Quick_Start_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1003 : finish command "export_db Quick_Start_gate.db" in  2.514620s wall, 2.433616s user + 0.078001s system = 2.511616s CPU (99.9%)
+
+RUN-1004 : used memory is 316 MB, reserved memory is 282 MB, peak memory is 394 MB
+RUN-1002 : start command "config_chipwatcher Debug.cwc -dir ."
+KIT-5601 WARNING: ChipWatcher: clock net clk25 is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[0] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[1] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[2] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[3] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[4] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[5] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[6] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[7] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[8] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[9] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[10] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[11] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[12] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[0] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[1] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[2] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[3] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[4] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[5] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[6] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[7] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[8] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[9] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[10] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[11] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[12] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[13] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[14] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[15] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[16] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[17] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[18] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[19] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[20] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[21] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[22] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[23] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[24] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[25] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[26] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[27] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[28] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[29] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[30] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[31] of bus bram32k_out is invalid.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[0] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[10] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[11] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[12] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[1] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[2] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[3] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[4] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[5] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[6] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[7] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[8] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[9] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[0] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[10] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[11] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[12] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[1] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[2] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[3] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[4] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[5] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[6] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[7] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[8] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[9] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[0] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[10] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[11] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[12] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[13] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[14] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[15] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[16] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[17] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[18] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[19] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[1] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[20] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[21] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[22] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[23] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[24] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[25] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[26] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[27] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[28] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[29] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[2] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[30] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[31] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[3] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[4] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[5] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[6] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[7] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[8] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[9] is not included by view data.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[0] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[10] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[11] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[12] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[1] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[2] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[3] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[4] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[5] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[6] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[7] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[8] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[9] of condition.
+KIT-5608 WARNING: ChipWatcher: data log error: trigger position 41, sample number 128, data length 5760.
+KIT-1004 : ChipWatcher: import watcher inst auto_chipwatcher_0 completed, there are 2 view nodes, 0 trigger nets, 0 data nets.
+KIT-5609 WARNING: ChipWatcher: there are 118 errors happened during importing.
+KIT-1004 : Chipwatcher code = 1011001100010011
+GUI-1001 : Import Debug.cwc success!
+RUN-1002 : start command "compile_watcher"
+KIT-8446 ERROR: Sanity check failed: No clock signal info.
+GUI-8306 ERROR: compile chipwatcher failed!
+HDL-1007 : analyze verilog file CPLD_SOC_AHB_TOP.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+HDL-1007 : analyze verilog file al_ip/M3WithAHB.v
+HDL-1007 : analyze verilog file OnePWM.v
+HDL-1007 : analyze verilog file CPLD_SOC_AHB_TOP.v
+HDL-1007 : analyze verilog file al_ip/PLL.v
+HDL-1007 : analyze verilog file al_ip/M3WithAHB.v
+HDL-1007 : analyze verilog file OnePWM.v
+RUN-1002 : start command "elaborate -top CPLD_SOC_AHB_TOP"
+HDL-1007 : elaborate module CPLD_SOC_AHB_TOP in CPLD_SOC_AHB_TOP.v(1)
+HDL-1007 : elaborate module PLL in al_ip/PLL.v(25)
+HDL-1007 : elaborate module EF2_PHY_PLL(FIN="25.000",FBCLK_DIV=40,CLKC0_DIV=5,CLKC1_DIV=20,CLKC2_DIV=40,CLKC3_DIV=125,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",CLKC3_ENABLE="ENABLE",FEEDBK_MODE="NOCOMP",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=4,CLKC1_CPHASE=19,CLKC2_CPHASE=39,CLKC3_CPHASE=124,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE",INTPI=3,HIGH_SPEED_EN="ENABLE",OFFSET_MODE="EXT",CLKC0_DUTY=0.5,CLKC1_DUTY=0.5,CLKC0_DUTY_INT=3,CLKC1_DUTY_INT=10) in C:/Anlogic/TD4.5.12562/arch/ef2_macro.v(2693)
+HDL-5007 WARNING: port 'i2s_mst_clk' is not connected on this instance in al_ip/M3WithAHB.v(62)
+HDL-5007 WARNING: port 'sleep_out' remains unconnected for this instance in al_ip/M3WithAHB.v(62)
+HDL-1007 : elaborate module M3WithAHB in al_ip/M3WithAHB.v(14)
+HDL-1007 : elaborate module EF2_PHY_MCU(GPIO_L0="ENABLE",GPIO_L1="ENABLE",GPIO_L3="ENABLE",GPIO_L4="ENABLE") in C:/Anlogic/TD4.5.12562/arch/ef2_macro.v(780)
+HDL-5007 WARNING: input port 'i2s_mst_clk' is not connected on this instance in al_ip/M3WithAHB.v(46)
+HDL-1007 : elaborate module OnePWM in OnePWM.v(1)
+HDL-1200 : Current top model is CPLD_SOC_AHB_TOP
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc 256.adc"
+RUN-1002 : start command "set_pin_assignment clkin  LOCATION = J1;  "
+RUN-1002 : start command "set_pin_assignment pwm[0]  LOCATION = D9;   "
+RUN-1002 : start command "set_pin_assignment pwm[1]  LOCATION = E8;   "
+RUN-1002 : start command "set_pin_assignment pwm[2]  LOCATION = F8;   "
+RUN-1002 : start command "set_pin_assignment pwm[3]  LOCATION = F7;   "
+RUN-1002 : start command "set_pin_assignment pwm[4]  LOCATION = D14;   "
+RUN-1002 : start command "set_pin_assignment pwm[5]  LOCATION = E10;   "
+RUN-1002 : start command "set_pin_assignment pwm[6]  LOCATION = B14;   "
+RUN-1002 : start command "set_pin_assignment pwm[7]  LOCATION = A14;   "
+RUN-1002 : start command "set_pin_assignment pwm[8]  LOCATION = B12;   "
+RUN-1002 : start command "set_pin_assignment pwm[9]  LOCATION = B11;   "
+RUN-1002 : start command "set_pin_assignment pwm[10]  LOCATION = C9;   "
+RUN-1002 : start command "set_pin_assignment pwm[11]  LOCATION = A8;   "
+RUN-1002 : start command "set_pin_assignment pwm[12]  LOCATION = C8;   "
+RUN-1002 : start command "set_pin_assignment pwm[13]  LOCATION = B6;   "
+RUN-1002 : start command "set_pin_assignment pwm[14]  LOCATION = A5;   "
+RUN-1002 : start command "set_pin_assignment pwm[15]  LOCATION = A4;   "
+USR-6010 WARNING: ADC constraints: pin dir[15] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[14] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[13] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[12] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[11] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[10] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[9] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[8] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[7] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[6] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[5] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[4] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[3] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[2] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[1] has no constraint.
+USR-6010 WARNING: ADC constraints: pin dir[0] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[31] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[30] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[29] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[28] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[27] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[26] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[25] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[24] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[23] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[22] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[21] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[20] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[19] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[18] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[17] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[16] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[15] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[14] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[13] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[12] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[11] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[10] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[9] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[8] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[7] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[6] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[5] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[4] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[3] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[2] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[1] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_in[0] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[31] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[30] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[29] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[28] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[27] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[26] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[25] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[24] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[23] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[22] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[21] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[20] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[19] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[18] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[17] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[16] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[15] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[14] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[13] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[12] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[11] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[10] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[9] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[8] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[7] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[6] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[5] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[4] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[3] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[2] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[1] has no constraint.
+USR-6010 WARNING: ADC constraints: pin gpio_out[0] has no constraint.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD4.5.12562/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "CPLD_SOC_AHB_TOP"
+SYN-1012 : SanityCheck: Model "M3WithAHB"
+SYN-1012 : SanityCheck: Model "PLL"
+SYN-1012 : SanityCheck: Model "OnePWM"
+SYN-1043 : Mark PLL as IO macro for instance pll_inst
+SYN-1011 : Flatten model CPLD_SOC_AHB_TOP
+SYN-1011 : Flatten model M3WithAHB
+SYN-1011 : Flatten model PLL
+SYN-1011 : Flatten model OnePWM
+SYN-1016 : Merged 49 instances.
+SYN-1014 : Optimize round 1
+SYN-1032 : 8835/823 useful/useless nets, 7971/720 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1021 : Optimized 8 onehot mux instances.
+SYN-1020 : Optimized 496 distributor mux.
+SYN-1016 : Merged 488 instances.
+SYN-1015 : Optimize round 1, 4353 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 7538/2841 useful/useless nets, 6674/512 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 552 better
+SYN-1014 : Optimize round 3
+SYN-1032 : 7538/0 useful/useless nets, 6674/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 3, 0 better
+RUN-1003 : finish command "optimize_rtl" in  3.251092s wall, 3.135620s user + 0.031200s system = 3.166820s CPU (97.4%)
+
+RUN-1004 : used memory is 216 MB, reserved memory is 214 MB, peak memory is 394 MB
+RUN-1002 : start command "report_area -file Quick_Start_rtl.area"
+RUN-1001 : standard
+***Report Model: CPLD_SOC_AHB_TOP***
+
+IO Statistics
+#IO                    97
+  #input               33
+  #output              64
+  #inout                0
+
+Gate Statistics
+#Basic gates         4042
+  #and                705
+  #nand                 0
+  #or                 512
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                147
+  #bufif1               0
+  #MX21                 8
+  #FADD                 0
+  #DFF               2670
+  #LATCH                0
+#MACRO_ADD             32
+#MACRO_EQ              84
+#MACRO_MUX           2512
+
+RUN-1001 : 
+Report Hierarchy Area:
++---------------------------------------------------+
+|Instance |Module           |gates  |seq    |macros |
++---------------------------------------------------+
+|top      |CPLD_SOC_AHB_TOP |1372   |2670   |116    |
++---------------------------------------------------+
+
+RUN-1002 : start command "read_sdc Quick_Start.sdc"
+RUN-1002 : start command "get_nets clk100m"
+RUN-1002 : start command "create_clock -name clk100m -period 10 -waveform 0 5 "
+RUN-1102 : create_clock: clock name: clk100m, type: 0, period: 10000, rise: 0, fall: 5000.
+RUN-1104 : Import SDC file Quick_Start.sdc finished, there are 3 nets kept by constraints.
+RUN-1002 : start command "export_db Quick_Start_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1003 : finish command "export_db Quick_Start_rtl.db" in  1.278277s wall, 1.185608s user + 0.062400s system = 1.248008s CPU (97.6%)
+
+RUN-1004 : used memory is 237 MB, reserved memory is 232 MB, peak memory is 394 MB
+RUN-1002 : start command "optimize_gate -packarea Quick_Start_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD4.5.12562/license/Anlogic.lic
+SYN-2001 : Map 97 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 7700/0 useful/useless nets, 6837/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 10156/0 useful/useless nets, 9293/0 useful/useless insts
+SYN-1016 : Merged 2 instances.
+SYN-2501 : Optimize round 1, 1258 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 10154/0 useful/useless nets, 9291/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 32 macro adder
+SYN-1032 : 11002/0 useful/useless nets, 10139/0 useful/useless insts
+RUN-1002 : start command "start_timer -prepack"
+TMR-2505 : Start building timing graph for model CPLD_SOC_AHB_TOP.
+TMR-2506 : Build timing graph completely. Port num: 5, tpin num: 41352, tnet num: 10993, tinst num: 10114, tnode num: 76783, tedge num: 78196.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 67 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+RUN-1003 : finish command "start_timer -prepack" in  1.343338s wall, 1.326008s user + 0.062400s system = 1.388409s CPU (103.4%)
+
+RUN-1004 : used memory is 321 MB, reserved memory is 314 MB, peak memory is 394 MB
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 10993 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3001 : Initiate 1 clocks from SDC.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=5, #lut = 3013 (4.11), #lev = 7 (3.92)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=5, #lut = 3013 (4.11), #lev = 7 (3.92)
+SYN-2581 : Mapping with K=5, #lut = 3013 (4.11), #lev = 7 (3.92)
+SYN-3001 : Logic optimization runtime opt =   0.53 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 6502 instances into 3013 LUTs, name keeping = 49%.
+SYN-1001 : Packing model "CPLD_SOC_AHB_TOP" ...
+SYN-4010 : Pack lib has 35 rtl pack models with 12 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 7481/0 useful/useless nets, 6618/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 2654 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 16 carry chain into lslice
+SYN-4007 : Packing 400 adder to BLE ...
+SYN-4008 : Packed 400 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 3013 LUT to BLE ...
+SYN-4008 : Packed 3013 LUT and 1296 SEQ to BLE.
+SYN-4003 : Packing 1358 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (1358 nodes)...
+SYN-4004 : #1: Packed 508 SEQ (64505 nodes)...
+SYN-4005 : Packed 508 SEQ with LUT/SLICE
+SYN-4006 : 1209 single LUT's are left
+SYN-4006 : 1358 single SEQ's are left
+SYN-4011 : Packing model "CPLD_SOC_AHB_TOP" (AL_USER_NORMAL) with 3863/4286 primitive instances ...
+RUN-1002 : start command "report_area -file Quick_Start_gate.area"
+RUN-1001 : standard
+***Report Model: CPLD_SOC_AHB_TOP***
+
+IO Statistics
+#IO                    97
+  #input               33
+  #output              64
+  #inout                0
+
+Utilization Statistics
+#lut                 3978   out of   4480   88.79%
+#reg                 2654   out of   4480   59.24%
+#le                  4828
+  #lut only          2174   out of   4828   45.03%
+  #reg only           850   out of   4828   17.61%
+  #lut&reg           1804   out of   4828   37.37%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                   97   out of    202   48.02%
+  #ireg                 0
+  #oreg                16
+  #treg                 0
+#pll                    1   out of      1  100.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++------------------------------------------------+
+|Instance |Module           |le    |lut   |seq   |
++------------------------------------------------+
+|top      |CPLD_SOC_AHB_TOP |4828  |3978  |2654  |
++------------------------------------------------+
+
+RUN-1003 : finish command "optimize_gate -packarea Quick_Start_gate.area" in  13.305516s wall, 13.057284s user + 0.327602s system = 13.384886s CPU (100.6%)
+
+RUN-1004 : used memory is 281 MB, reserved memory is 295 MB, peak memory is 394 MB
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model CPLD_SOC_AHB_TOP
+RUN-1002 : start command "read_sdc Quick_Start.sdc"
+RUN-1002 : start command "get_nets clk100m"
+RUN-1002 : start command "create_clock -name clk100m -period 10 -waveform 0 5 "
+RUN-1102 : create_clock: clock name: clk100m, type: 0, period: 10000, rise: 0, fall: 5000.
+RUN-1104 : Import SDC file Quick_Start.sdc finished, there are 4 nets kept by constraints.
+RUN-1002 : start command "export_db Quick_Start_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1003 : finish command "export_db Quick_Start_gate.db" in  2.983513s wall, 2.698817s user + 0.078001s system = 2.776818s CPU (93.1%)
+
+RUN-1004 : used memory is 298 MB, reserved memory is 310 MB, peak memory is 394 MB
+RUN-1002 : start command "config_chipwatcher Debug.cwc -dir ."
+KIT-5601 WARNING: ChipWatcher: clock net clk25 is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[0] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[1] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[2] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[3] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[4] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[5] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[6] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[7] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[8] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[9] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[10] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[11] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_addr[12] of bus bram32k_addr is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[0] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[1] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[2] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[3] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[4] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[5] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[6] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[7] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[8] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[9] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[10] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[11] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[12] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[13] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[14] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[15] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[16] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[17] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[18] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[19] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[20] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[21] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[22] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[23] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[24] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[25] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[26] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[27] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[28] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[29] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[30] of bus bram32k_out is invalid.
+KIT-5602 WARNING: ChipWatcher: data view net bram32k_out[31] of bus bram32k_out is invalid.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[0] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[10] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[11] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[12] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[1] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[2] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[3] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[4] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[5] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[6] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[7] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[8] is not included by view data.
+KIT-5604 WARNING: ChipWatcher: trigger net bram32k_addr[9] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[0] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[10] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[11] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[12] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[1] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[2] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[3] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[4] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[5] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[6] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[7] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[8] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_addr[9] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[0] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[10] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[11] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[12] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[13] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[14] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[15] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[16] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[17] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[18] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[19] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[1] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[20] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[21] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[22] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[23] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[24] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[25] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[26] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[27] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[28] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[29] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[2] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[30] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[31] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[3] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[4] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[5] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[6] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[7] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[8] is not included by view data.
+KIT-5605 WARNING: ChipWatcher: data net bram32k_out[9] is not included by view data.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[0] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[10] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[11] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[12] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[1] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[2] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[3] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[4] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[5] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[6] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[7] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[8] of condition.
+KIT-5607 WARNING: ChipWatcher: unknown trigger net bram32k_addr[9] of condition.
+KIT-5608 WARNING: ChipWatcher: data log error: trigger position 41, sample number 128, data length 5760.
+KIT-1004 : ChipWatcher: import watcher inst auto_chipwatcher_0 completed, there are 2 view nodes, 0 trigger nets, 0 data nets.
+KIT-5609 WARNING: ChipWatcher: there are 118 errors happened during importing.
+KIT-1004 : Chipwatcher code = 1011001100010011
+GUI-1001 : Import Debug.cwc success!
+RUN-1002 : start command "compile_watcher"
+KIT-8446 ERROR: Sanity check failed: No clock signal info.
+GUI-8306 ERROR: compile chipwatcher failed!
